@@ -6,7 +6,7 @@ module.exports = {
                 console.log(err);
                 response.json({message: "Error in find"});
             } else {
-                response.json(result);
+                response.json(results);
             }
         })
     },
@@ -17,7 +17,7 @@ module.exports = {
                 console.log(err);
                 response.json({message: "Error in create"});
             } else {
-                response.json(result);
+                response.json(results);
             }
         })
     },
