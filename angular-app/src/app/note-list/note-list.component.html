@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let note of notes">
+    <h4>{{note['text']}}</h4>
+    <h5>Noted on: {{note['createdAt'] | date:'short'}}</h5>
+    <form (submit)="delete()">
+      <input type="submit" value="Delete">
+    </form>
+  </li>
+</ul>

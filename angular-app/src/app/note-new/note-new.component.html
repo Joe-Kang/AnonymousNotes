@@ -1,0 +1,5 @@
+<form (submit)="onSubmit()" #form="ngForm">
+  Note: <input type="text" name="text" required [(ngModel)]="note.text">
+  <button type="submit">Add Note</button>
+</form>
+
